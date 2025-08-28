@@ -17,7 +17,7 @@ from random import choice
 
 class colors:
     """
-    Clase utilizada para colorear 
+    Clase utilizada para colorear
     """
 
     reset = '\033[0m'
@@ -160,7 +160,7 @@ def wordpy():
     # Tamaño de las palabras
     size_word = 5
     # Utilizando QPython3 en android es necesario especificar la ruta del archivo
-    archivo = "/storage/emulated/0/qpython/projects3/pydle/spanish.lst"
+    archivo = "./spanish.lst"
 
     juego = JUEGO(
         tam_palabra=5,
