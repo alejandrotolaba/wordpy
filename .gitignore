@@ -5,5 +5,8 @@
 **/__pycache__/
 *.pyc
 
+# Editores
+pyrightconfig.json
+
 # Otros
 _*.md
