@@ -73,10 +73,10 @@ class JUEGO:
 
         # Armar lista con solo las palabras que tengan la longitud especificada
         # y quitar el caracter del salto de linea al final de cada palabra con ([0:-1])
-        lista_palabras = []
-        for i in lista_completa:
-            if len(i) == (self.tam_palabras + 1):
-                lista_palabras.append(i[0:-1])
+        lista_palabras = [
+        	palabra.strip() for palabra in lista_completa
+         	if len(palabra.strip()) == self.tam_palabras
+        ]
 
         return lista_palabras
 
@@ -157,15 +157,12 @@ def colorear_palabra(intento, original):
 
 
 def wordpy():
-    # Tamaño de las palabras
-    size_word = 5
-    # Utilizando QPython3 en android es necesario especificar la ruta del archivo
     archivo = "./spanish.lst"
 
     juego = JUEGO(
         tam_palabra=5,
         intentos=6,
-        archivo_palabras="spanish.lst",
+        archivo_palabras=archivo,
         validar_palabras=True
     )
 
