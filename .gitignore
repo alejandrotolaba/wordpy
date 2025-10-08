@@ -1,1 +1,9 @@
-__pycache__/
+# Entorno virtual
+**/.venv/
+
+# Python
+**/__pycache__/
+*.pyc
+
+# Otros
+_*.md
